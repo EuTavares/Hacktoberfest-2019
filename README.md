@@ -5,8 +5,9 @@ Primeiro é necessário que você se cadastre o próprio site do eveto
 https://hacktoberfest.digitalocean.com/
 
 
-### Faça uma cópia desse repositório por meio do fork:
+### Faça uma cópia desse repositório por meio do botão fork:
 
+![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-09-30%2022-48-40.png)
 
 
 ### Baixe o git na sua máquina ###
@@ -15,8 +16,9 @@ Caso use Linux basta usar o comando referente ao seu package manager de uso por 
 ```
 sudo apt-get install git
 ```
+Caso sua plataforma seja Windows pode baixar pelo site https://git-scm.com/downloads
 
-para ver se a istalação do git funcionou rode 
+para ver se a instalação do git funcionou rode 
 git --version
 ### Configure seu usúario com os comando abaixo: ###
 ```
@@ -25,13 +27,8 @@ git --version
 ```
 
 ### Clone a cópia do repositório para a sua máquina local
- No terminal digite o seguinte comando
- A URL quer será colada na frente do comando "git clone" é a cópia do projeto original, ou seja, o seu projeto obtido atráves do "Fork"
- 
- 
- ![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-09-30%2022-48-40.png)
- 
- git clone url do seu repositório remoto
+ No terminal digite o seguinte comando "git clone URL" Substitua URL pela url da página de clone do projeto original.
+ Por exemplo "git clone https://github.com/seunome/Hacktoberfest-2019"
  
  
  ![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-10-01%2000-17-02.png)
@@ -41,7 +38,7 @@ git --version
  Crie um arquivo txt com o seu nome dentro da pasta do projeto
  
 No termial, após as alterações rode o comando __git status__. Em resumo esse comando irá listar o status do seu repositório local, que pode conter alguns estatos como staged, untracked, modified e entre outros.
-Provavelmente a saída desse comando irá retornar que o arquivo que você alterou está "modified".
+Provavelmente a saída desse comando irá retornar que o arquivo que você alterou está "Untracked".
 
 
 ![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-10-01%2000-17-43.png)
@@ -58,7 +55,8 @@ Ao rodar __git status__ veremos que em nosso repositório está tudo beme agora 
 
 
 ### Enviando nossas atualizações para Github
-Com o comando __git push origin master__ enviaremos todas as mudanças feitas e salvas pelo último commit para o servidor do github
+Com o comando __git push origin master__ enviaremos todas as mudanças feitas e salvas pelo último commit para o servidor do github.
+O terminal irá pedir seu nome de usuario do github e sua senha do mesmo.
 
 
 ![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-10-01%2000-19-16.png)
@@ -76,3 +74,9 @@ Por exemplo:
 Confirme o Pull Request clicando em Create Pull Request
 
 ![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-09-30%2023-47-53.png)
+
+
+## Pronto, você realizou um dos 4 Pull Requests necessários para a camisa
+Basta repetir o processo alterando o ou adicionando o seu arquivo, mandando para o github (git add, git commit, git push origin master) e por fim enviando o pull request (New Pull Request)
+
+pode acompanhar sua contagem de Pull requests pelo site https://hacktoberfest.digitalocean.com/
