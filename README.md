@@ -26,6 +26,11 @@ git --version
 
 ### Clone a cópia do repositório para a sua máquina local
  No terminal digite o seguinte comando
+ A URL quer será colada na frente do comando "git clone" é a cópia do projeto original, ou seja, o seu projeto obtido atráves do "Fork"
+ 
+ 
+ ![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-09-30%2022-48-40.png)
+ 
  git clone url do seu repositório remoto
  
  
@@ -61,3 +66,13 @@ Com o comando __git push origin master__ enviaremos todas as mudanças feitas e 
  ### Nosso primeiro Pull Request
  
 Um pull request nada mais é que um pedido para o moderador do projeto que clonou via Fork para aceitar suas mudanças e implementa-las no projeto original
+
+Para isso volte ao Github, na sua página do clone do projeto e procure pelo botão "New Pull Request"
+
+Por exemplo:
+
+![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-09-30%2023-47-39.png)
+
+Confirme o Pull Request clicando em Create Pull Request
+
+![](https://github.com/lucasmarinzeck/Hacktoberfest-2019/blob/master/prints/Screenshot%20from%202019-09-30%2023-47-53.png)
