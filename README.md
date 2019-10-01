@@ -28,7 +28,7 @@ git --version
  No terminal digite o seguinte comando
  git clone url do seu repositório remoto
  
- ### Faça alterações na cópia local da sua máquina
+ ### Faça alterações na cópia do projeto na sua máquina local 
  Pode ser qualquer tippo de alteração. Por exemplo escreva seu nome ao final da linha do arquivo de contribuição
  
 No termial, após as alterações rode o comando __git status__. Em resumo esse comando irá listar o status do seu repositório local, que pode conter alguns estatos como staged, untracked, modified e entre outros.
@@ -38,7 +38,10 @@ Ao rodar __git status__ veremos que em nosso repositório está tudo beme agora 
 ### Enviando nossas atualizações para Github
 Com o comando __git push origin master__ enviaremos todas as mudanças feitas e salvas pelo último commit para o servidor do github
 ```
+git push origin master
 Entre com o nome da sua conta no Github
 Entre com sua senha 
 ```
+ ### Nosso primeiro Pull Request
  
+Um pull request nada mais é que um pedido para o moderador do projeto que clonou via Fork para aceitar suas mudanças e implementa-las no projeto original
