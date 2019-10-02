@@ -1,0 +1,138 @@
+CREATE TAVLE tb_teste_tipo(
+valor_usado VARCHAR(10),
+res_booll 	BOOL
+);
+
+INSERT INTO tb_tipo_teste
+VALUES
+('TRUE', TRUE),
+('1', '1'),
+('t', 't'),
+('no' 'no'),
+('f', 'f'),
+('NUll', NULL),
+('FALSE', FALSE);
+
+SELECT * FROM tb_tipo_teste;
+---------------------------------
+
+DROP TABLE tb_tipo_teste(
+char_simples	CHAR,
+char_fixo		CHAR(13),
+char_variavel	VARCHAR(128)
+);
+
+INSERT INTO tb_tipo_teste
+VALUES
+('F', '0-349-10177-9, 'A fabrica de string'),
+('S', '1-85723-457-X', 'Excecao'),
+('F', '0-349-10768-9', 'Particula'),
+(NULL, '', 'T.B.D');
+
+INSERT INTO tb_tipo_teste
+VALUES
+('L', 'Um String muito longo', 'L');
+
+SELECT char_fixo,
+	LENGTH(char_fixo),
+	char_variavel
+FROM tb_tipo_teste
+WHERE char_simples = 'S';
+
+SELECT char_fixo,
+	LENGTH(char_fixo),
+	char_variavel
+FROM tb_tipo_teste
+WHERE char_simples IS NULL;
+-----------------------------------
+
+CREATE TABLE tb_tipo_teste(
+um_smallint		SMALLINT,
+um_int 			INTEGER
+um_float		FLOAT,
+um_real			REAL,
+um_numeric		NUMERIC(5,2)
+);
+
+INSERT INTO tb_teste_tipo
+VALUES
+(2, 2, 2.0, 2.0),
+(-100, -100, 123.456789, 123.456789, 123.456789),
+(-32768, -123456789, 1.23456789, 1.23456789, 1.234567891),
+(-32768, -123456789, 123456789.123456789, 123456789.123456789, 123.123456789);
+
+INSERT INTO tb_tipo_teste
+VALUES
+(-32768, -123456789 123456789.123456789, 23456789.123456789, 123456789.123456789);
+
+-----------------------------------
+
+CREATE TABLE tb_funcionario_2 (
+cod_referencia 	CHAR(5),
+dias_uteis		INT[7]
+);
+
+INSERT INTO tb_funcionario_2
+VALUES
+('val01', {0,1,0,1,1,1,1});
+
+INSERT INTO tb_funcionario_2
+VALUES
+('val02', {0,1,1,1,1,0,1});
+
+SELECT dias_uteis[2]
+FROM tb_funcionario_2
+WHERE cod_referencia = 'val02';
+---------------------------------
+
+CREATE TABLE tb_funcionario_2 (
+cod_referencia 	CHAR(5),
+dias_uteis		INT[7]
+);
+
+INSERT INTO tb_funcionario_2
+VALUES
+('val01', {0,1,0,1,1,1,1});
+
+INSERT INTO tb_funcionario_2
+VALUES
+('val02', {0,1,1,1,1,0,1});
+
+
+
+
+SELECT ds_item,
+	SUBSTR(ds_item,3,5),
+	preco_venda,
+	ROUND(preco_venda)
+FROM tb_item;
+
+SELECT TRIM('0', FROM '000Teste da Função TRIM000');
+SELECT TRIM(' Teste da Função TRIM ');
+SELECT STRPOS('Teste da Função TRIM', 'e');
+SELECT ABS(-12345.67);
+----------------------------------
+CREATE TABLE tb_teste_restricoes(
+COL_NOTNULL		INT NOT NULL,
+COLL_UNIQUE		INT UNIQUE,
+COL_PK			INT PRIMARY KEY,
+COL_DEFAULT 	INT DEFAULT 42,
+COL_CHECK		INT CHECK(col_check < 42)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
