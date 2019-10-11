@@ -7,10 +7,10 @@ public class Person{
     this.birth = birth;
   }
   
-  private String name;
-  private Date birth;
+  protected String name = "Lucas";
+  protected Date birth;
   
-  public void talk(){
+  protected void talk(){
     System.out.println("Hello everyoe");
   }
 }
